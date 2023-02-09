@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/* GENERALE */
+
 .griglia{
   display: flex;
   flex-wrap: wrap;
@@ -18,4 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bg-color{
+  background-color: chartreuse;
 }

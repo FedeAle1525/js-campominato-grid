@@ -77,6 +77,12 @@ playBtnEl.addEventListener('click', function(){
     // 6. Aggancio evento "click" sulla cella: appare un messaggio nella console con il numero della cella
     cellaEl.addEventListener('click', function(){
       console.log(`Questa e' la cella numnero ${i+1}`);
+
+      // Aggiungo/Tolgo colore di sfondo alla cella con metodo "toggle";
+      cellaEl.classList.toggle('bg-color');
+
+      // Aggiungo colore di sfondo alla cella con Stile in Linea
+      // cellaEl.style.cssText += `background-color: chartreuse`;
     });
 
     // 7. Inserisco la Cella creata dentro la Griglia nel DOM
