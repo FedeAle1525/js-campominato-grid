@@ -12,7 +12,7 @@
 }
 
 .griglia > *{
-  width: 10%;
+  /* width: 10%; */
   aspect-ratio: 1/1;
   border: 2px solid green;
   display: flex;

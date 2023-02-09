@@ -6,6 +6,9 @@ const grigliaEl = document.querySelector('.griglia');
 
 // 3. Aggancio evento "click" al Pulsante Play recuperato da DOM
 playBtnEl.addEventListener('click', function(){
+
+  // Svuoto contenuto della Griglia perche ad ogni "click" del pulsante si deve generare una nuova griglia e non appenderla alla precedente
+  grigliaEl.innerHTML = '';
   
   // 4. Imposto Dimensione delle Celle e Numero complessivo di Celle [Gliglia Quadrata 10x10]  
   latoGriglia = 10;
@@ -15,7 +18,7 @@ playBtnEl.addEventListener('click', function(){
   for (let i=0; i < numCelle; i++){
 
     // 5.1 - Creo Stringa che rappresenta la Cella
-    const cellaStringa = `<div>${i+1}</div>`;
+    const cellaStringa = `<div style="width:calc(100% / ${latoGriglia})">${i+1}</div>`;
     
     // 5.2 - Inserisco la Cella creata dentro la Griglia nel DOM
     grigliaEl.innerHTML += cellaStringa;
