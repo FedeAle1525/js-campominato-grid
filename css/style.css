@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+/* GENERARLI */
+
+.container-griglia{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .griglia{
   display: flex;
   flex-wrap: wrap;
